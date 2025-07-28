@@ -3,9 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 07- Fetch an API</title>
+    <title>NASA Image of the Day</title>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
   </head>
-  <body></body>
+
+  <body>
+    <h2 class="heading">NASA Astronomy Picture of the Day</h2>
+    <div class="gallery-container">
+      <div class="main-image-wrapper">
+        <form id="search-form" class="title-overlay">
+          <label for="dateInput">Choose a date:</label>
+          <input type="date" id="dateInput" name="dateInput" required />
+          <input type="submit" value="Surprise me!" />
+        </form>
+
+        <section id="responseContainer"></section>
+      </div>
+    </div>
+  </body>
 </html>
