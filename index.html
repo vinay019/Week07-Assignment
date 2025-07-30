@@ -12,10 +12,24 @@
     <h2 class="heading">NASA Astronomy Picture of the Day</h2>
     <div class="gallery-container">
       <div class="main-image-wrapper">
-        <form id="search-form" class="title-overlay">
+        <form
+          id="search-form"
+          class="title-overlay"
+          aria-label="Choose a date to view the NASA Astronomy Picture of the day"
+        >
           <label for="dateInput">Choose a date:</label>
-          <input type="date" id="dateInput" name="dateInput" required />
-          <input type="submit" value="Surprise me!" />
+          <input
+            type="date"
+            id="dateInput"
+            name="dateInput"
+            required
+            aria-label="Date input"
+          />
+          <input
+            type="submit"
+            value="Surprise me!"
+            aria-label="Submit selected date"
+          />
         </form>
 
         <section id="responseContainer"></section>
